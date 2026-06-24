@@ -7,6 +7,46 @@ em Saúde), in support of a methodological review of genome-wide association stu
 overlap between studies, at the level of source cohorts and at the level of
 genetic markers (SNPs), and characterises the heterogeneity of the genotyping platforms used.
 
+## Overview
+
+Genome-wide association studies (GWAS) of Alzheimer's disease have grown
+considerably over the past two decades, yet larger samples have not
+translated into a proportional gain in genetic signal. Two reasons stand
+out, the reuse of the same source cohorts across studies, which undermines
+their independence, and the heterogeneity of the genetic data, which come
+from different genotyping platforms that are rarely harmonised. This project
+provides a quantitative basis for both issues, turning into numbers what the
+literature had described mostly in qualitative terms.
+
+The work is organised around three strands:
+
+- **Metadata curation.** A structured metadata table covering forty
+  Alzheimer's disease GWAS was built from scratch, drawing together
+  information on source cohorts, case and control counts, genomic assay
+  type, diagnostic methods and reported cofactors. This table is the source
+  on which every later analysis depends.
+- **Cohort overlap.** The extent to which different GWAS rely on the same
+  source databases was quantified and related to the strength of the
+  diagnostic methods behind those databases, in order to estimate the risk
+  of shared individuals between studies.
+- **Genetic data heterogeneity.** An R pipeline standardises the genotyping
+  platform manifests into a common format and crosses the resulting marker
+  sets, measuring SNP overlap both between platforms and between studies.
+
+## What this repository contains
+
+- The full **R pipeline** for manifest standardisation and overlap
+  analysis, from the raw platform files to the supplementary tables.
+- The **Python notebooks** used for the exploratory analysis and for the
+  figures presented in the report.
+- The **curated metadata table** and supplementary workbooks, provided for
+  consultation.
+- The **final figures** included in the report.
+
+This repository accompanies a curricular internship report and supports a
+methodological review of Alzheimer's disease GWAS currently in preparation
+by the same team.
+
 ## Repository structure
 ## Repository structure
 alzheimer-gwas-curation/
