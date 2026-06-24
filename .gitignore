@@ -1,0 +1,47 @@
+# ============================================================
+# Manifestos e anotações das plataformas
+# Devem ser descarregados das fontes originais. Ver README.
+# ============================================================
+*.bed
+GSA-*.csv
+Human*.csv
+Multi-EthnicGlobal_*.csv
+*-auxilliary-file.txt
+*.db
+*.sqlite
+
+# ============================================================
+# Ficheiros intermédios gerados pelo pipeline (regeráveis)
+# ============================================================
+padrao_*.tsv
+padrao_TODOS.tsv
+matriz_*.tsv
+resumo_plataformas.tsv
+snps_por_n_plataformas.tsv
+gwas_limpo.tsv
+gwas_snps_sumario.tsv
+ranking_pares_gwas_*.tsv
+
+# ============================================================
+# R
+# ============================================================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ============================================================
+# Python / Jupyter
+# ============================================================
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# ============================================================
+# Sistema operativo
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
