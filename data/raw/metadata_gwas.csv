@@ -1,0 +1,302 @@
+FIRST AUTHOR;Year of publication;Title;ID;Web/ citation;Studies where the data comes from;N - AD;N - Controls;N - Total;Imaging for all;Autopsy for all;CSF for all;Biomarkers for all;Unspec./ diverse methods;Non clinical interview;Imaging for all;Autopsy for all;CSF for all;Biomarkers for all;Unspec./ diverse methods;Non clinical interview;Genomic Assay GWAS;Genotyping Platform
+Grupe;2007;Evidence for novel susceptibility genes for late-onset Alzheimer’s disease from a genome-wide association study of putative functional variants.;GWAS40;https://doi.org/10.1093/hmg/ddm031;UK1;380;396;776;0;0;0;0;380;0;0;0;0;0;396;0;SNP;Applied Biosystems UK BiLEVE Axiom Array
+;;;;;UK2;309;349;658;0;0;0;0;309;0;0;0;0;0;349;0;;Applied Biosystems UK Biobank Axiom Array
+;;;;;UK3;503;643;1146;0;0;0;0;503;0;0;0;0;0;643;0;;NA
+;;;;;WU;376;344;720;0;0;0;0;376;0;0;0;0;0;344;0;;NA
+;;;;;SD;240;330;570;0;0;0;0;240;0;0;0;0;0;330;0;;NA
+;;;;;TOTAL;1808;2062;3870;0;0;0;0;1808;0;0;0;0;0;2062;0;;
+Bertram;2008;Genome-wide association analysis reveals putative Alzheimer's disease susceptibility loci in addition to APOE.;GWAS39;https://doi.org/10.1016/j.ajhg.2008.10.008;NIMH;941;404;1345;0;0;0;0;941;0;0;0;0;0;404;0;SNP;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;TOTAL;941;404;1345;0;0;0;0;941;0;0;0;0;0;404;0;;
+Harold;2009;Genome-wide association study identifies variants at CLU and PICALM associated with Alzheimer’s disease.;GWAS38;https://www.nature.com/articles/ng.440;MRC;1221;1044;2265;0;81;0;0;1140;0;0;0;0;0;1044;0;SNP;Illumina Infinium Human610-Quad
+;;;;;GERAD;2389;4771;7160;0;0;0;0;2389;0;0;0;0;0;4771;0;;NA
+;;;;;WU;503;300;803;0;0;0;0;503;0;0;0;0;0;300;0;;NA
+;;;;;CORIELL;0;808;808;0;0;0;0;0;0;0;0;0;0;808;0;;Illumina Infinium HumanHap550
+;;;;;HNR;0;380;380;0;0;0;0;0;0;0;0;0;0;380;0;;Illumina Infinium HumanHap550
+;;;;;ALS;0;1124;1124;0;0;0;0;0;0;0;0;0;0;1124;0;;Illumina Infinium HumanHap300
+;;;;;MAYO/RMAYO;844;1255;2099;0;250;0;0;594;0;0;0;0;0;1255;0;;Illumina Infinium HumanHap300
+;;;;;TOTAL;4957;9682;14639;0;331;0;0;4626;0;0;0;0;0;9682;0;;
+Lambert;2009;Genome-wide association study identifies variants at CLU and CR1 asssociated with Alzheimer's disease;GWAS37;https://www.nature.com/articles/ng.439;French AD cases;2025;0;2025;0;0;0;0;2025;0;0;0;0;0;0;0;SNP;Illumina Infinium Human610-Quad
+;;;;;French Three-City ;0;5328;5328;0;0;0;0;0;0;0;0;0;0;5328;0;;
+;;;;;TOTAL;2025;5328;7353;0;0;0;0;2025;0;0;0;0;0;5328;0;;
+Naj;2010;Dementia revealed: novel chromosome 6 locus for late-onset Alzheimer disease provides genetic evidence for folate-pathway abnormalities.;GWAS36;https://doi.org/10.1371/journal.pgen.1001130;HIHG;210;449;659;0;0;0;0;210;0;0;0;0;0;449;0;SNP;"Illumina Infinium Human1M-Duo; Illumina Infinium Human610-Quad; TaqMan Genotyping Assay"
+;;;;;CHGR;200;189;389;0;0;0;0;200;0;0;0;0;0;189;0;;
+;;;;;MSBB;191;45;236;0;191;0;0;0;0;0;45;0;0;0;0;;
+;;;;;TOTAL;601;683;1284;0;191;0;0;410;0;0;45;0;0;638;0;;
+Seshadri;2010;Genome-wide analysis of genetic loci associated with Alzheimer disease. ;GWAS35;https://doi.org/10.1001/jama.2010.574;CHS;93;2429;2522;93;0;0;0;0;0;2429;0;0;0;0;0;SNP;Illumina Infinium HumanCNV370-Duo
+;;;;;FHS;52;2091;2143;52;0;0;0;0;0;2091;0;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;Rotterdam Study;171;5700;5871;171;0;0;0;0;0;5700;0;0;0;0;0;;Illumina Infinium HumanHap550
+;;;;;AGES-RS;78;2684;2762;78;0;0;0;0;0;2684;0;0;0;0;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;TGEN;829;536;1365;0;829;0;0;0;0;0;536;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;MAYO/RMAYO;810;1202;2012;0;0;0;0;810;0;0;0;0;0;1202;0;;Illumina Infinium HumanHap300
+;;;;;TOTAL;2033;14642;16675;394;829;0;0;810;0;12904;536;0;0;1202;0;;
+Feulner;2010;Examination of the current top candidate genes for AD in a genome-wide ;GWAS34;https://doi.org/10.1038/mp.2008.141;German AD cases;491;0;491;0;0;0;0;491;0;0;0;0;0;0;0;SNP;Illumina Infinium HumanHap550
+;;;;;PopGen biobank;0;479;479;0;0;0;0;0;0;0;0;0;0;479;0;;
+;;;;;TOTAL;491;479;970;0;0;0;0;491;0;0;0;0;0;479;0;;
+Logue;2011;A comprehensive genetic association study of Alzheimer disease in African Americans.;GWAS33;https://jamanetwork.com/journals/jamaneurology/fullarticle/1108047;MIRAGE;267;292;559;0;0;0;0;267;0;0;0;0;0;0;292;SNP;"Illumina Infinium Human610-Quad;  Illumina Infinium HumanCNV370-Duo"
+;;;;;GenerAAtions;246;204;450;0;0;0;0;246;0;0;0;0;0;204;0;;"TaqMan Genotyping Assay; Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;TOTAL;513;496;1009;0;0;0;0;513;0;0;0;0;0;204;292;;
+Wijsman;2011;Genome-wide association of familial late-onset Alzheimer’s disease replicates BIN1 and CLU and nominates CUGBP2 in interaction with APOE.;GWAS32;https://doi.org/10.1371/journal.pgen.1001308;NCRAD/NIA-LOAD;2324;1079;3403;0;0;0;0;2324;0;0;0;0;0;1079;0;SNP;Illumina Infinium Human610-Quad
+;;;;;TOTAL;2324;1079;3403;0;0;0;0;2324;0;0;0;0;0;1079;0;;
+Hollingworth;2011;Common variants at ABCA7, MS4A6A/MS4A4E, EPHA1, CD33 and CD2AP are associated with Alzheimer’s disease.;GWAS31;https://www.nature.com/articles/ng.803;GERAD;3941;7848;11789;0;0;0;0;3941;0;0;0;0;0;7848;0;SNP;"Illumina Infinium Human610-Quad;Illumina Infinium HumanHap550; Illumina Infinium HumanHap300"
+;;;;;EADI;2025;5328;7353;0;0;0;0;2025;0;0;0;0;0;5328;0;;Illumina Infinium Human610-Quad
+;;;;;ADNI;151;177;328;151;0;0;0;0;0;177;0;0;0;0;0;;Illumina Infinium Human610-Quad
+;;;;;TGEN;571;332;903;0;571;0;0;0;0;0;332;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;TOTAL;6688;13685;20373;151;571;0;0;5966;0;177;332;0;0;13176;0;;
+Kamboh;2012;Genome-wide association study of Alzheimer’s disease.;GWAS30;https://www.nature.com/articles/tp201245;ADRC;1440;1000;2440;0;338;0;0;1102;0;0;2;0;0;998;0;SNP;Illumina Infinium HumanOmni1-Quad
+;;;;;TOTAL;1440;1000;2440;0;338;0;0;1102;0;0;2;0;0;998;0;;
+Lee;2012;Alzheimer disease and replication of CLU, PICALM, and BIN1 in Caribbean Hispanic individuals.;GWAS29;https://jamanetwork.com/journals/jamaneurology/fullarticle/802552;WHICAP;311;543;854;0;0;0;311;0;0;0;0;0;543;0;0;SNP;Illumina Infinium HumanHap650Y
+;;;;;EFIGA;238;1;239;0;0;0;0;238;0;0;0;0;0;1;0;;
+;;;;;TOTAL;549;544;1093;0;0;0;311;238;0;0;0;0;543;1;0;;
+Lambert;2013;Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease.;GWAS28;https://www.nature.com/articles/ng.2802;ADC1-10;2512;1245;3757;0;0;0;0;2512;0;0;0;0;0;1245;0;SNP;NA
+;;;;;ACT;566;1696;2262;0;0;0;0;566;0;0;0;0;0;1696;0;;NA
+;;;;;ADNI;268;173;441;268;0;0;0;0;0;173;0;0;0;0;0;;NA
+;;;;;GenADA;669;713;1382;0;0;0;0;669;0;0;0;0;0;713;0;;NA
+;;;;;NCRAD/NIA-LOAD;1811;1572;3383;0;0;0;0;1811;0;0;0;0;0;1572;0;;NA
+;;;;;MAYO / RMAYO;728;1173;1901;0;0;0;0;728;0;0;0;0;0;1173;0;;NA
+;;;;;MIRAGE;509;742;1251;0;0;0;0;509;0;0;0;0;0;0;742;;NA
+;;;;;OHSU;131;153;284;0;0;0;0;131;0;0;0;0;0;153;0;;NA
+;;;;;ROS/MAP;291;776;1067;0;0;0;0;291;0;0;0;0;0;776;0;;NA
+;;;;;TGEN2;129;493;622;0;129;0;0;0;0;0;493;0;0;0;0;;NA
+;;;;;UM/CWRU/MSSM;1070;1128;2198;0;409;0;0;661;0;0;136;0;992;0;0;;NA
+;;;;;UPITT;1271;841;2112;0;277;0;0;994;0;0;2;0;839;0;0;;NA
+;;;;;WU;318;187;505;0;0;0;0;318;0;0;0;0;187;0;0;;NA
+;;;;;AGES-RS;78;2694;2772;78;0;0;0;0;0;2694;0;0;0;0;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;CHS;421;1834;2255;421;0;0;0;0;0;1834;0;0;0;0;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;FHS;243;6300;6543;243;0;0;0;0;0;6300;0;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;Rotterdam Study;633;10938;11571;633;0;0;0;0;0;10938;0;0;0;0;0;;Illumina Infinium HumanHap550
+;;;;;EADI;2243;6017;8260;0;0;0;0;2243;0;0;0;0;0;6017;0;;Illumina Infinium Human610-Quad
+;;;;;GERAD/PERADES;3177;7277;10454;0;0;0;0;3177;0;0;0;0;0;7277;0;;NA
+;;;;;TOTAL;17068;45952;63020;1643;815;0;0;2458;0;21939;631;0;2018;20622;742;;
+Sherva;2013;Genome-wide association study of the rate of cognitive decline in Alzheimer's disease.;GWAS27;https://alz-journals.onlinelibrary.wiley.com/doi/10.1016/j.jalz.2013.01.008;ADNI;303;243;546;303;0;0;0;0;0;243;0;0;0;0;0;SNP;Illumina Infinium Human610-Quad
+;;;;;TOTAL;303;243;546;303;0;0;0;0;0;243;0;0;0;0;0;;
+Lambert;2013;Genome-wide haplotype association study identifies the FRMD4A gene as a risk locus for Alzheimer's disease.;GWAS26;https://www.nature.com/articles/mp201214;EADI;2025;5328;7353;0;0;0;0;2025;0;0;0;0;0;5328;0;SNP;Illumina Infinium Human610-Quad
+;;;;;TOTAL;2025;5328;7353;0;0;0;0;2025;0;0;0;0;0;5328;0;;
+Jonsson;2013;Variant of TREM2 associated with the risk of Alzheimer's disease.;GWAS25;https://www.nejm.org/doi/10.1056/NEJMoa1211103;Icelandics;3754;111286;115040;0;0;0;0;3754;0;0;0;0;0;111286;0;SNP & WGS;TaqMan Genotyping Assay
+;;;;;TOTAL;3754;111286;115040;0;0;0;0;3754;0;0;0;0;0;111286;0;;
+Jun;2014;PLXNA4 is associated with Alzheimer disease and modulates tau phosphorylation.;GWAS24;https://onlinelibrary.wiley.com/doi/10.1002/ana.24219;FHS;61;2530;2591;61;0;0;0;0;0;2530;0;0;0;0;0;SNP;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;TOTAL;61;2530;2591;61;0;0;0;0;0;2530;0;0;0;0;0;;
+Floudas;2014;Identifying genetic interactions associated with late-onset Alzheimer’s disease.;GWAS23;https://link.springer.com/article/10.1186/s13040-014-0035-z;ADRC;1290;955;2245;0;0;0;0;1290;0;0;0;0;0;955;0;SNP;NA
+;;;;;TGEN;861;550;1411;0;861;0;0;0;0;0;550;0;0;0;0;;NA
+;;;;;TOTAL;2151;1505;3656;0;861;0;0;1290;0;0;550;0;0;955;0;;
+Cruchaga;2014;Rare coding variants in the phospholipase D3 gene confer risk for Alzheimer’s disease.;GWAS22;https://www.nature.com/articles/nature12825;ADRC;1114;913;2027;0;0;0;0;1114;0;0;0;0;0;913;0;SNP & WES;"Illumina GoldenGate Custom Genotyping; Sequenom MassARRAY System; LGC KASP Genotyping Assay; TaqMan Genotyping Assay"
+;;;;;NCRAD/NIA-LOAD;868;881;1749;0;0;0;0;868;0;0;0;0;0;881;0;;
+;;;;;Wellderly;0;?;0;0;0;0;0;0;0;0;0;0;0;0;0;;
+;;;;;CCS;255;2471;2726;0;0;0;0;255;0;0;0;0;0;2471;0;;
+;;;;;UK-NIA;143;183;326;0;0;0;0;143;0;0;0;0;0;183;0;;
+;;;;;UPITT;1253;958;2211;0;0;0;0;1253;0;0;0;0;0;958;0;;
+;;;;;Toronto;269;250;519;0;0;0;0;269;0;0;0;0;0;250;0;;
+;;;;;TOTAL;3902;5656;9558;0;0;0;0;3902;0;0;0;0;0;5656;0;;
+Tosto;2015;F-box/LRR-repeat protein 7 is genetically associated with Alzheimer's disease.;GWAS21;https://onlinelibrary.wiley.com/doi/10.1002/acn3.223;WHICAP;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;SNP;"Illumina Infinium Human660W-Quad; Illumina Infinium Human1M-Duo; Illumina Infinium HumanOmniExpress-12"
+;;;;;EFIGA;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;
+;;;;;NOMAS;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;Applied Biosystems Human Genome-Wide SNP Array 6.0
+;;;;;TOTAL;2451;2063;4514;0;0;0;0;2451;0;0;0;0;0;2063;0;;
+Hirano;2015;A genome-wide association study of late-onset Alzheimer's disease in a Japanese population;GWAS20;https://journals.lww.com/psychgenetics/abstract/2015/08000/a_genome_wide_association_study_of_late_onset.1.aspx;Kyushu University;827;0;827;827;0;0;0;0;0;0;0;0;0;0;0;SNP;Illumina Infinium HumanOmniExpress-12
+;;;;;Biobank Japan;0;6063;6063;0;0;0;0;0;0;0;0;0;0;6063;0;;
+;;;;;Osaka Midosuji Rotary Club;0;1023;1023;0;0;0;0;0;0;0;0;0;0;1023;0;;
+;;;;;Pharma SNP consortium;0;906;906;0;0;0;0;0;0;0;0;0;0;906;0;;
+;;;;;TOTAL;827;7086;7913;827;0;0;0;0;0;0;0;0;0;7086;0;;
+Jun;2016;A novel Alzheimer disease locus located near the gene encoding tau protein.;GWAS19;https://www.nature.com/articles/mp201523;ADGC;11664;11053;22717;0;0;0;0;11664;0;0;0;0;0;11053;0;SNP;NA
+;;;;;EADI;2029;6017;8046;0;0;0;0;2029;0;0;0;0;0;6017;0;;NA
+;;;;;GERAD/PERADES;2897;6031;8928;0;0;0;0;2897;0;0;0;0;0;6031;0;;NA
+;;;;;AGES-RS;54;2748;2802;54;0;0;0;0;0;2748;0;0;0;0;0;;NA
+;;;;;CHS;698;1632;2330;698;0;0;0;0;0;1632;0;0;0;0;0;;NA
+;;;;;FHS;1478;5913;7391;1478;0;0;0;0;0;5913;0;0;0;0;0;;NA
+;;;;;Rotterdam Study;725;10460;11185;725;0;0;0;0;0;10460;0;0;0;0;0;;NA
+;;;;;TOTAL;19545;43854;63399;2955;0;0;0;16590;0;20753;0;0;0;23101;0;;
+Herold;2016;Family-based Association Analyses of Imputed Genotypes Reveal Genome-Wide Significant Association of Alzheimer’s disease with OSBPL6, PTPRG and PDCL3.;GWAS18;https://www.nature.com/articles/mp2015218;NCRAD/NIA-LOAD;748;282;1030;0;0;0;0;748;0;0;0;0;0;282;0;SNP;Applied Biosystems Human Genome-Wide SNP Array 6.0
+;;;;;NIMH;941;404;1345;941;0;0;0;0;0;0;404;0;0;0;0;;
+;;;;;TOTAL;1689;686;2375;941;0;0;0;748;0;0;404;0;0;282;0;;
+Sims;2017;Rare coding variants in PLCG2, ABI3, and TREM2 implicate microglial-mediated innate immunity in Alzheimer's disease.;GWAS17;https://www.nature.com/articles/ng.3916;GERAD/PERADES;4049;5049;9098;0;0;0;0;4049;0;0;0;0;0;5049;0;SNP;"Illumina Infinium HumanExome v1.0; Illumina Infinium HumanExome v1.1; Agena Bioscience MassARRAY System; TaqMan Genotyping Assay"
+;;;;;CHARGE;2156;5085;7241;2156;0;0;0;0;0;5085;0;0;0;0;0;;"Illumina Infinium HumanExome v1.0; Agena Bioscience MassARRAY System; TaqMan Genotyping Assay"
+;;;;;EADI;7836;11787;19623;0;0;0;0;7836;0;0;0;0;0;11787;0;;"Agena Bioscience MassARRAY System; TaqMan Genotyping Assay"
+;;;;;ADGC;6652;8345;14997;0;0;0;0;6652;0;0;0;0;0;8345;0;;"Illumina Infinium HumanExome v1.0 ; TaqMan Genotyping Assay"
+;;;;;TOTAL;20693;30266;50959;2156;0;0;0;18537;0;5085;0;0;0;25181;0;;
+Mez;2017;Two novel loci, COBL and SLC10A2, for Alzheimer's disease in African Americans.;GWAS16;https://alz-journals.onlinelibrary.wiley.com/doi/10.1016/j.jalz.2016.09.002;ADGC;1825;3784;5609;0;0;0;0;1825;0;0;0;0;0;3784;0;SNP;Illumina Infinium Human1M-Duo
+;;;;;TOTAL;1825;3784;5609;0;0;0;0;1825;0;0;0;0;0;3784;0;;
+Gusareva;2018;Male-specific epistasis between WWC1 and TLN2 genes is associated with Alzheimer's disease.;GWAS15;https://www.sciencedirect.com/science/article/abs/pii/S0197458018302847?via%3Dihub;EADI;2243;6017;8260;0;0;0;0;2243;0;0;0;0;0;6017;0;SNP;Illumina Infinium Human610-Quad
+;;;;;TOTAL;2243;6017;8260;0;0;0;0;2243;0;0;0;0;0;6017;0;;
+Marioni;2018;GWAS on family history of Alzheimer’s disease.;GWAS14;https://doi.org/10.1038/s41398-018-0150-6;UK Biobank;42034;506921;548955;0;0;0;0;42034;0;0;0;0;0;0;506921;SNP;"Applied Biosystems UK BiLEVE Axiom Array; Applied Biosystems UK Biobank Axiom Array"
+;;;;;TOTAL;42034;506921;548955;0;0;0;0;42034;0;0;0;0;0;0;506921;;
+Jansen;2019;Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer's disease risk.;GWAS13;https://www.nature.com/articles/s41588-018-0311-9;DemGene;2066;7637;9703;0;0;0;0;2066;0;0;0;0;0;7637;0;SNP & WES;Illumina Infinium HumanOmniExpress-24 v1.1
+;;;;;STSA;348;799;1147;0;0;0;0;348;0;0;0;0;0;799;0;;Illumina Infinium PsychArray
+;;;;;TwinGene;322;6325;6647;0;0;0;0;322;0;0;0;0;0;6325;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;IGAP;17008;37154;54162;0;0;0;0;17008;0;0;0;0;0;37154;0;;NA
+;;;;;ADSP;4343;3163;7506;0;0;0;0;4343;0;0;0;0;0;3163;0;;NA
+;;;;;UK Biobank;47793;328320;376113;0;0;0;0;47793;0;0;0;0;0;0;328320;;"Applied Biosystems UK BiLEVE Axiom Array; Applied Biosystems UK Biobank Axiom Array"
+;;;;;TOTAL;71880;383398;455278;0;0;0;0;71880;0;0;0;0;0;55078;328320;;
+de Rojas;2019;Common variants in Alzheimer's disease and risk stratification by polygenic risk scores.;GWAS12;https://www.nature.com/articles/s41467-021-22491-8;Gr@ace;6331;6055;12386;0;0;0;0;6331;0;0;0;0;0;6055;0;SNP;Applied Biosystems Axiom Spain Biobank Array
+;;;;;IGAP;21982;41944;63926;0;0;0;0;21982;0;0;0;0;0;41944;0;;Illumina iSelect Custom Genotyping BeadChip
+;;;;;UK Biobank;42034;506921;548955;0;0;0;0;42034;0;0;0;0;0;0;506921;;Applied Biosystems UK Biobank Axiom Array
+;;;;;TOTAL;70347;554920;625267;0;0;0;0;70347;0;0;0;0;0;47999;506921;;
+Kunkle BW;2019;Genetic meta-analysis of diagnosed Alzheimer's disease identifies new risk loci and implicates A?, tau, immunity and lipid processing.;GWAS11;https://www.nature.com/articles/s41588-019-0358-2;ADC1-10;6432;2540;8972;0;4627;0;0;1805;0;0;517;0;0;2023;0;SNP;"Illumina Infinium Human660W-Quad; Illumina Infinium HumanOmniExpress-12"
+;;;;;ACT;532;1512;2044;0;70;0;0;462;0;0;155;0;0;1357;0;;Illumina Infinium Human660W-Quad
+;;;;;ADNI;268;173;441;268;0;0;0;0;0;173;0;0;0;0;0;;Illumina Infinium Human610-Quad
+;;;;;BIOCARD;6;112;118;6;0;0;0;0;0;112;0;0;0;0;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;CHAP;27;144;171;0;0;0;0;27;0;0;0;0;0;144;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;EAS;9;141;150;0;0;0;0;9;0;0;0;0;0;141;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;GenADA;666;712;1378;0;0;0;0;666;0;0;0;0;0;712;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array;Illumina Infinium HumanHap550; Illumina Infinium Human1M-Duo"
+;;;;;MAYO / RMAYO;671;1279;1950;0;0;0;0;671;0;0;0;0;0;1279;0;;"Illumina Infinium HumanHap300; Illumina Infinium HumanOmniExpress-12"
+;;;;;MIRAGE;491;738;1229;0;0;0;0;491;0;0;0;0;0;0;738;;"Illumina Infinium Human610-Quad; Illumina Infinium HumanHap300"
+;;;;;MTC;256;189;445;0;0;0;0;256;0;0;0;0;0;189;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;NCRAD/NIA-LOAD;1798;1568;3366;0;0;0;0;1798;0;0;0;0;0;1568;0;;Illumina Infinium Human610-Quad
+;;;;;NBB;80;48;128;0;80;0;0;0;0;0;48;0;0;0;0;;Illumina Infinium Human1M-Duo
+;;;;;OHSU;132;153;285;0;0;0;0;132;0;0;0;0;0;153;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;PFIZER;696;762;1458;0;0;0;0;696;0;0;0;0;0;762;0;;Illumina Infinium HumanHap550
+;;;;;ROS/MAP;354;986;1340;0;0;0;0;354;0;0;0;0;0;986;0;;"Applied Biosystems Human Genome-Wide SNP Array 6.0; Illumina Infinium HumanOmniExpress-12"
+;;;;;TARCC;323;181;504;0;0;0;0;323;0;0;0;0;0;181;0;;Applied Biosystems Human Genome-Wide SNP Array 6.0
+;;;;;TGEN2;668;365;1033;0;668;0;0;0;0;0;365;0;0;0;0;;Applied Biosystems Axiom Genome-Wide CEU Array
+;;;;;UKS;596;170;766;0;0;0;0;596;0;0;0;0;0;170;0;;Illumina Infinium HumanHap550
+;;;;;UM/CWRU/MSSM;1177;1126;2303;0;409;0;0;768;0;0;136;0;0;990;0;;"Illumina Infinium Human660W-Quad; Illumina Infinium Human1M-Duo; Applied Biosystems Human Genome-Wide SNP Array 6.0"
+;;;;;UPITT;1255;829;2084;0;277;0;0;978;0;0;2;0;0;827;0;;Illumina Infinium HumanOmni1-Quad
+;;;;;WU;377;281;658;0;0;0;0;377;0;0;0;0;0;281;0;;NA
+;;;;;WHICAP;73;560;633;0;0;0;73;0;0;0;0;0;560;0;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;CSDC;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;NA
+;;;;;ASPS/PRODEM;277;169;446;277;0;0;0;0;0;169;0;0;0;0;0;;Illumina Infinium Human610-Quad
+;;;;;AGES-RS;95;2708;2803;95;0;0;0;0;0;2708;0;0;0;0;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;CHS;450;1702;2152;450;0;0;0;0;0;1702;0;0;0;0;0;;Illumina Infinium HumanCNV370-Duo
+;;;;;FHS;330;3910;4240;330;0;0;0;0;0;3910;0;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;Rotterdam Study;985;4985;5970;985;0;0;0;0;0;4985;0;0;0;0;0;;Illumina Infinium HumanHap550
+;;;;;EADI;2240;6631;8871;0;0;0;0;2240;0;0;0;0;0;6631;0;;Illumina Infinium Human610-Quad
+;;;;;GERAD/PERADES;3177;7277;10454;0;0;0;0;3177;0;0;0;0;0;7277;0;;"Illumina Infinium HumanHap300; Illumina Infinium HumanHap550; Illumina Infinium Human610-Quad"
+;;;;;TOTAL;24441;41951;66392;2411;6131;0;73;15826;0;13759;1223;0;560;25671;738;;
+Moreno-Grau;2019;Genome-wide association analysis of dementia and its clinical endophenotypes reveal novel loci associated with Alzheimer's disease and three causality networks: The GR@ACE project.;GWAS10;https://alz-journals.onlinelibrary.wiley.com/doi/10.1016/j.jalz.2019.06.4950;Gr@ace;4120;3289;7409;0;0;0;0;4120;0;0;0;0;0;3289;0;SNP;Applied Biosystems Axiom Spain Biobank Array
+;;;;;TOTAL;4120;3289;7409;0;0;0;0;4120;0;0;0;0;0;3289;0;;
+Lo;2019;Identification of genetic heterogeneity of Alzheimer's disease across age.;GWAS9;https://www.sciencedirect.com/science/article/abs/pii/S0197458019300727?via%3Dihub;ACT1;311;1555;1866;0;0;0;0;311;0;0;0;0;0;1555;0;SNP;NA
+;;;;;ADC*;2524;1074;3598;0;0;0;0;2524;0;0;0;0;0;1074;0;;NA
+;;;;;ADNI;138;172;310;0;0;0;0;138;0;0;0;0;0;172;0;;NA
+;;;;;GenADA;647;704;1351;0;0;0;0;647;0;0;0;0;0;704;0;;NA
+;;;;;MAYO / RMAYO;0;1035;1035;0;0;0;0;0;0;0;0;0;0;1035;0;;NA
+;;;;;MIRAGE;386;245;631;0;0;0;0;386;0;0;0;0;0;0;245;;NA
+;;;;;NCRAD/NIA-LOAD;724;881;1605;0;0;0;0;724;0;0;0;0;0;881;0;;NA
+;;;;;OHSU;125;151;276;0;0;0;0;125;0;0;0;0;0;151;0;;NA
+;;;;;ROS/MAP;275;744;1019;0;0;0;0;275;0;0;0;0;0;744;0;;NA
+;;;;;TGEN2;74;0;74;0;74;0;0;0;0;0;0;0;0;0;0;;NA
+;;;;;UM/CWRU/MSSM;989;961;1950;0;409;0;0;580;0;0;136;0;0;825;0;;NA
+;;;;;UPITT;1142;809;1951;0;277;0;0;865;0;0;2;0;0;807;0;;NA
+;;;;;WU;310;183;493;0;0;0;0;310;0;0;0;0;0;183;0;;NA
+;;;;;TOTAL;7645;8514;16159;0;760;0;0;6885;0;0;138;0;0;8131;245;;
+Nazarian;2019;Genome-wide analysis of genetic predisposition to Alzheimer’s disease and related sex disparities.;GWAS8;https://link.springer.com/article/10.1186/s13195-018-0458-8;NCRAD/NIA-LOAD;1850;1866;3716;0;0;0;0;1850;0;0;0;0;0;1866;0;SNP;Illumina Infinium Human610-Quad
+;;;;;FHS;413;3996;4409;413;0;0;0;0;0;3996;0;0;0;0;0;;"Affymetrix GeneChip Human Mapping 250K Nsp Array; Affymetrix GeneChip Human Mapping 250K Sty Array"
+;;;;;CHS;197;3000;3197;197;0;0;0;0;0;3000;0;0;0;0;0;;"Illumina Infinium HumanCNV370-Duo; Illumina Infinium HumanOmni1-Quad"
+;;;;;HRS;281;5877;6158;0;0;0;0;281;0;0;0;0;0;5877;0;;Illumina Infinium HumanOmni2.5-Quad
+;;;;;TOTAL;2741;14739;17480;610;0;0;0;2131;0;6996;0;0;0;7743;0;;
+Hao;2019;Prediction of Alzheimer’s Disease-Associated Genes by Integration of GWAS Summary Data and Expression Data;GWAS7;https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2018.00653/full;IGAP;17008;37154;54162;0;0;0;0;17008;0;0;0;0;0;37154;0;SNP;NA
+;;;;;TOTAL;17008;37154;54162;0;0;0;0;17008;0;0;0;0;0;37154;0;;
+Wightman;2021;A genome-wide association study with 1,126,563 individuals identifies new risk loci for Alzheimer's disease.;GWAS6;https://www.nature.com/articles/s41588-021-00921-z;deCODE;7002;181573;188575;0;0;0;0;7002;0;0;0;0;0;0;181573;SNP;NA
+;;;;;UK Biobank;46613;318246;364859;0;0;0;0;46613;0;0;0;0;0;0;318246;;NA
+;;;;;"The Trøndelag Health Study (HUNT)
+";1156;7157;8313;0;0;0;0;1156;0;0;0;0;0;7157;0;;"Illumina Infinium HumanCoreExome-12 v1.0; Illumina Infinium HumanCoreExome12 v1.1; Illumina Infinium UM HUNT Biobank v1.0"
+;;;;;23andMe;3807;359839;363646;0;0;0;0;0;3807;0;0;0;0;0;359839;;"Illumina Infinium HumanHap550; Illumina Infinium OmniExpress-24 v1.0; Illumina Infinium Global Screening Array"
+;;;;;BioVU;600;36059;36659;0;0;0;0;600;0;0;0;0;0;36059;0;;Illumina Infinium Expanded Multi-Ethnic Genotyping Array (MEGAEX)
+;;;;;DemGene;1638;6059;7697;0;0;0;0;1638;0;0;0;0;0;6059;0;;NA
+;;;;;STSA;320;750;1070;0;0;0;0;320;0;0;0;0;0;750;0;;NA
+;;;;;TwinGene;224;6321;6545;0;0;0;0;224;0;0;0;0;0;6321;0;;NA
+;;;;;ANMerge;366;259;625;366;0;0;0;0;0;259;0;0;0;0;0;;Illumina Infinium HumanOmniExpress-12
+;;;;;Gothenburg H70 Birth Cohort Studies + Clinical AD from Sweden;712;2523;3235;0;0;0;0;712;0;0;0;0;0;2523;0;;Illumina Infinium Neurochip
+;;;;;ADC1-10;6432;2540;8972;0;4627;0;0;1805;0;0;517;0;0;2023;0;;NA
+;;;;;ACT;532;1512;2044;0;70;0;0;462;0;0;155;0;0;1357;0;;NA
+;;;;;ADNI;268;173;441;268;0;0;0;0;0;173;0;0;0;0;0;;NA
+;;;;;BIOCARD;6;112;118;6;0;0;0;0;0;112;0;0;0;0;0;;NA
+;;;;;CHAP;27;144;171;0;0;0;0;27;0;0;0;0;0;144;0;;NA
+;;;;;EAS;9;141;150;0;0;0;0;9;0;0;0;0;0;141;0;;NA
+;;;;;GenADA;666;712;1378;0;0;0;0;666;0;0;0;0;0;712;0;;NA
+;;;;;MAYO / RMAYO;671;1279;1950;0;0;0;0;671;0;0;0;0;0;1279;0;;NA
+;;;;;MIRAGE;491;738;1229;0;0;0;0;491;0;0;0;0;0;0;738;;NA
+;;;;;MTC;256;189;445;0;0;0;0;256;0;0;0;0;0;189;0;;NA
+;;;;;NCRAD/NIA-LOAD;1798;1568;3366;0;0;0;0;1798;0;0;0;0;0;1568;0;;NA
+;;;;;NBB;80;48;128;0;80;0;0;0;0;0;48;0;0;0;0;;NA
+;;;;;OHSU;132;153;285;0;0;0;0;132;0;0;0;0;0;153;0;;NA
+;;;;;PFIZER;696;762;1458;0;0;0;0;696;0;0;0;0;0;762;0;;NA
+;;;;;ROS/MAP;354;986;1340;0;0;0;0;354;0;0;0;0;0;986;0;;NA
+;;;;;TARCC;323;181;504;0;0;0;0;323;0;0;0;0;0;181;0;;NA
+;;;;;TGEN2;668;365;1033;0;668;0;0;0;0;0;365;0;0;0;0;;NA
+;;;;;UKS;596;170;766;0;0;0;0;596;0;0;0;0;0;170;0;;NA
+;;;;;UM/CWRU/MSSM;1177;1126;2303;0;409;0;0;768;0;0;136;0;0;990;0;;NA
+;;;;;UPITT;1255;829;2084;0;277;0;0;978;0;0;2;0;0;827;0;;NA
+;;;;;WU;377;281;658;0;0;0;0;377;0;0;0;0;0;281;0;;NA
+;;;;;WHICAP;73;560;633;0;0;0;73;0;0;0;0;0;560;0;0;;NA
+;;;;;CSDC;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;NA
+;;;;;ASPS/PRODEM;277;169;446;277;0;0;0;0;0;169;0;0;0;0;0;;NA
+;;;;;AGES-RS;95;2708;2803;95;0;0;0;0;0;2708;0;0;0;0;0;;NA
+;;;;;CHS;450;1702;2152;450;0;0;0;0;0;1702;0;0;0;0;0;;NA
+;;;;;FHS;330;3910;4240;330;0;0;0;0;0;3910;0;0;0;0;0;;NA
+;;;;;Rotterdam Study;985;4985;5970;985;0;0;0;0;0;4985;0;0;0;0;0;;NA
+;;;;;EADI;2240;6631;8871;0;0;0;0;2240;0;0;0;0;0;6631;0;;NA
+;;;;;GERAD/PERADES;3177;7277;10454;0;0;0;0;3177;0;0;0;0;0;7277;0;;NA
+;;;;;Finngen;1798;72206;74004;0;0;0;0;1798;0;0;0;0;0;0;72206;;NA
+;;;;;Gr@ace;4120;3289;7409;0;0;0;0;4120;0;0;0;0;0;3289;0;;NA
+;;;;;TOTAL;92797;1036232;1129029;2777;6131;0;73;80009;3807;14018;1223;0;560;87829;932602;;
+Wang;2021;Similar Genetic Architecture of Alzheimer's Disease and Differential APOE Effect Between Sexes.;GWAS5;https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2021.674318/full;ACT1;311;1555;1866;0;0;0;0;311;0;0;0;0;0;1555;0;WGS;NA
+;;;;;ADCA;2524;1074;3598;0;0;0;0;2524;0;0;0;0;0;1074;0;;NA
+;;;;;ADNI;138;172;310;138;0;0;0;0;0;172;0;0;0;0;0;;NA
+;;;;;GenADA;647;704;1351;0;0;0;0;647;0;0;0;0;0;704;0;;NA
+;;;;;MAYO / RMAYO;0;1035;1035;0;0;0;0;0;0;0;0;0;0;1035;0;;NA
+;;;;;MIRAGE;386;245;631;0;0;0;0;386;0;0;0;0;0;0;245;;NA
+;;;;;NCRAD/NIA-LOAD;724;881;1605;0;0;0;0;724;0;0;0;0;0;881;0;;NA
+;;;;;OHSU;125;151;276;0;0;0;0;125;0;0;0;0;0;151;0;;NA
+;;;;;ROS/MAP;275;744;1019;0;0;0;0;275;0;0;0;0;0;744;0;;NA
+;;;;;TGEN2;74;0;74;0;74;0;0;0;0;0;0;0;0;0;0;;NA
+;;;;;UM/CWRU/MSSM;989;961;1950;0;409;0;0;580;0;0;136;0;0;825;0;;NA
+;;;;;UPITT;1142;809;1951;0;277;0;0;865;0;0;2;0;0;807;0;;NA
+;;;;;WU;310;183;493;0;0;0;0;310;0;0;0;0;0;183;0;;NA
+;;;;;TOTAL;7645;8514;16159;138;760;0;0;6747;0;172;138;0;0;7959;245;;
+Kunkle;2021;Novel Alzheimer Disease Risk Loci and Pathways in African American Individuals Using the African Genome Resources Panel: A Meta-analysis.;GWAS4;https://jamanetwork.com/journals/jamaneurology/fullarticle/2771828;ACT1;32;65;97;0;0;0;0;32;0;0;0;0;0;65;0;SNP;Illumina Infinium Human660W-Quad
+;;;;;AAG;624;161;785;0;0;0;0;624;0;0;0;0;0;161;0;;Illumina Infinium Human1M-Duo
+;;;;;ADC;228;189;417;0;0;0;0;228;0;0;0;0;0;189;0;;"Illumina Infinium Human660W-Quad; Illumina Infinium HumanOmniExpress-12; Illumina Infinium HumanOmniExpressExome-8 v1.2; Illumina Infinium Global Screening Array"
+;;;;;CHAP;795;2451;3246;0;0;0;0;795;0;0;0;0;0;2451;0;;Illumina Infinium Human1M-Duo
+;;;;;GenerAAtions;242;204;446;0;0;0;0;242;0;0;0;0;0;204;0;;Illumina Infinium Human660W-Quad
+;;;;;IU;173;1002;1175;0;0;0;0;173;0;0;0;0;0;1002;0;;Illumina Infinium Human1M-Duo
+;;;;;MAYO / RMAYO;64;195;259;0;0;0;0;64;0;0;0;0;0;195;0;;Illumina Infinium Human1M-Duo
+;;;;;MIRAGE;51;65;116;0;0;0;0;51;0;0;0;0;0;0;65;;"Illumina Infinium HumanHap300; Illumina Infinium Human660W-Quad"
+;;;;;UM/CWRU/MSSM;29;14;43;0;0;0;0;29;0;0;0;0;0;14;0;;Illumina Infinium Human1M-Duo
+;;;;;NCRAD/NIA-LOAD;35;61;96;0;0;0;0;35;0;0;0;0;0;61;0;;"Illumina Infinium Human610-Quad; Illumina Infinium HumanCNV370-Duo"
+;;;;;ROS/MAP;30;218;248;0;0;0;0;30;0;0;0;0;0;218;0;;"Illumina Infinium Human1M-Duo; Illumina Infinium Global Screening Array"
+;;;;;UM/VU;110;189;299;0;0;0;0;110;0;0;0;0;0;189;0;;"Illumina Infinium Human1M-Duo; Illumina Infinium Global Screening Array"
+;;;;;UPITT;114;79;193;0;0;0;0;114;0;0;0;0;0;79;0;;Illumina Infinium Human1M-Duo
+;;;;;WHICAP;170;299;469;0;0;0;170;0;0;0;0;0;299;0;0;;"Illumina Infinium Multi-Ethnic Global-8 Array (MEGA); Illumina Infinium HumanOmniExpress-24 v1.0"
+;;;;;WU;87;30;117;0;0;0;0;87;0;0;0;0;0;30;0;;Illumina Infinium Human1M-Duo
+;;;;;TOTAL;2784;5222;8006;0;0;0;170;2614;0;0;0;0;299;4858;65;;
+Schwartzentruber;2021;Genome-wide meta-analysis, fine-mapping and integrative prioritization implicate new Alzheimer’s disease risk genes.;GWAS3;https://www.nature.com/articles/s41588-020-00776-w;ADC1-10;6432;2540;8972;0;4627;0;0;1805;0;0;517;0;0;2023;0;SNP;NA
+;;;;;ACT;532;1512;2044;0;70;0;0;462;0;0;155;0;0;1357;0;;NA
+;;;;;ADNI;268;173;441;268;0;0;0;0;0;173;0;0;0;0;0;;NA
+;;;;;BIOCARD;6;112;118;6;0;0;0;0;0;112;0;0;0;0;0;;NA
+;;;;;CHAP;27;144;171;0;0;0;0;27;0;0;0;0;0;144;0;;NA
+;;;;;EAS;9;141;150;0;0;0;0;9;0;0;0;0;0;141;0;;NA
+;;;;;GenADA;666;712;1378;0;0;0;0;666;0;0;0;0;0;712;0;;NA
+;;;;;MAYO / RMAYO;671;1279;1950;0;0;0;0;671;0;0;0;0;0;1279;0;;NA
+;;;;;MIRAGE;491;738;1229;0;0;0;0;491;0;0;0;0;0;0;738;;NA
+;;;;;MTC;256;189;445;0;0;0;0;256;0;0;0;0;0;189;0;;NA
+;;;;;NCRAD/NIA-LOAD;1798;1568;3366;0;0;0;0;1798;0;0;0;0;0;1568;0;;NA
+;;;;;NBB;80;48;128;0;80;0;0;0;0;0;48;0;0;0;0;;NA
+;;;;;OHSU;132;153;285;0;0;0;0;132;0;0;0;0;0;153;0;;NA
+;;;;;PFIZER;696;762;1458;0;0;0;0;696;0;0;0;0;0;762;0;;NA
+;;;;;ROS/MAP;354;986;1340;0;0;0;0;354;0;0;0;0;0;986;0;;NA
+;;;;;TARCC;323;181;504;0;0;0;0;323;0;0;0;0;0;181;0;;NA
+;;;;;TGEN2;668;365;1033;0;668;0;0;0;0;0;365;0;0;0;0;;NA
+;;;;;UKS;596;170;766;0;0;0;0;596;0;0;0;0;0;170;0;;NA
+;;;;;UM/CWRU/MSSM;1177;1126;2303;0;409;0;0;768;0;0;136;0;0;990;0;;NA
+;;;;;UPITT;1255;829;2084;0;277;0;0;978;0;0;2;0;0;827;0;;NA
+;;;;;WU;377;281;658;0;0;0;0;377;0;0;0;0;0;281;0;;NA
+;;;;;WHICAP;73;560;633;0;0;0;73;0;0;0;0;0;560;0;0;;NA
+;;;;;CSDC;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;NA
+;;;;;ASPS/PRODEM;277;169;446;277;0;0;0;0;0;169;0;0;0;0;0;;NA
+;;;;;AGES-RS;95;2708;2803;95;0;0;0;0;0;2708;0;0;0;0;0;;NA
+;;;;;CHS;450;1702;2152;450;0;0;0;0;0;1702;0;0;0;0;0;;NA
+;;;;;FHS;330;3910;4240;330;0;0;0;0;0;3910;0;0;0;0;0;;NA
+;;;;;Rotterdam Study;985;4985;5970;985;0;0;0;0;0;4985;0;0;0;0;0;;NA
+;;;;;EADI;2240;6631;8871;0;0;0;0;2240;0;0;0;0;0;6631;0;;NA
+;;;;;GERAD/PERADES;3177;7277;10454;0;0;0;0;3177;0;0;0;0;0;7277;0;;NA
+;;;;;UK Biobank;53042;355900;408942;0;0;0;0;53042;0;0;0;0;0;0;355900;;NA
+;;;;;TOTAL;77483;397851;475334;2411;6131;0;73;68868;0;13759;1223;0;560;25671;356638;;
+Bellenguez;2022;New insights into the genetic etiology of Alzheimer's disease and related dementias.;GWAS2;https://www.nature.com/articles/s41588-022-01024-z;EADB;20464;22244;42708;0;0;0;0;20464;0;0;0;0;0;22244;0;SNP;Illumina Infinium Global Screening Array
+;;;;;Gr@ace;6497;6785;13282;0;0;0;0;6497;0;0;0;0;0;6785;0;;Applied Biosystems Axiom Spain Biobank Array
+;;;;;Rotterdam Study;1306;6700;8006;1306;0;0;0;0;0;6700;0;0;0;0;0;;Illumina Infinium HumanHap550
+;;;;;EADI;2400;6338;8738;0;0;0;0;2400;0;0;0;0;0;6338;0;;Illumina Infinium Human610-Quad
+;;;;;GERAD/PERADES;3665;8363;12028;0;0;0;0;3665;0;0;0;0;0;8363;0;;"Illumina Infinium HumanHap300; Illumina Infinium HumanHap550; Illumina Infinium Human610-Quad"
+;;;;;DemGene;1693;5926;7619;0;0;0;0;1693;0;0;0;0;0;5926;0;;"Illumina Infinium HumanOmniExpress-24 v1.1; deCODE genetics Custom Axiom Array v1 (Part No. 20012591_A1)"
+;;;;;NxC;269;675;944;0;0;0;0;269;0;0;0;0;0;675;0;;Affymetrix GeneChip Human Mapping 250K Nsp Array
+;;;;;CCHS;365;6106;6471;0;0;0;0;365;0;0;0;0;0;6106;0;;"Illumina Infinium Metabochip; Illumina Infinium HumanExome v1.0"
+;;;;;UK Biobank;49275;338440;387715;0;0;0;0;49275;0;0;0;0;0;0;338440;;Applied Biosystems UK BiLEVE Axiom Array
+;;;;;TOTAL;85934;401577;487511;1306;0;0;0;84628;0;6700;0;0;0;56437;338440;;
+Shigemizu;2022;Whole-genome sequencing reveals novel ethnicity-specific rare variants associated with Alzheimer's disease;GWAS1;https://www.nature.com/articles/s41380-022-01483-0;NCGG biobank;140;798;938;140;0;0;0;0;0;0;0;0;0;798;0;WGS;"Illumina HiSeq X Ten; Illumina NovaSeq 6000"
+;;;;;TOTAL;140;798;938;140;0;0;0;0;0;0;0;0;0;798;0;;

@@ -1,0 +1,41 @@
+First_author;Year;N_subsamples_total;N_subsamples_with_platform;N_subsamples_unknown;N_platforms_used;Platforms_used;N_SNPs_union;N_SNPs_intersection;Has_complete_data
+Grupe;2007;5;0;5;0;;0;0;False
+Bertram;2008;1;1;0;2;Affy250K-Nsp, Affy250K-Sty;491046;491046;True
+Harold;2009;7;5;2;3;Human610-Quad, HumanHap300, HumanHap550;605859;309750;False
+Lambert;2009;2;2;0;1;Human610-Quad;592628;592628;True
+Feulner;2010;2;2;0;1;HumanHap550;560972;560972;True
+Naj;2010;3;3;0;2;Human610-Quad, Illumina1M;1166640;1166640;True
+Seshadri;2010;6;4;2;4;Affy250K-Nsp, Affy250K-Sty, HumanHap300, HumanHap550;966450;51122;False
+Hollingworth;2011;4;4;0;5;Affy250K-Nsp, Affy250K-Sty, Human610-Quad, HumanHap300, HumanHap550;1007196;87903;True
+Logue;2011;2;2;0;3;Affy250K-Nsp, Affy250K-Sty, Human610-Quad;995771;87903;True
+Wijsman;2011;1;1;0;1;Human610-Quad;592628;592628;True
+Kamboh;2012;1;1;0;1;HumanOmni1-Quad;1053483;1053483;True
+Lee;2012;2;2;0;1;HumanHap650Y;660388;660388;True
+Jonsson;2013;1;0;1;0;;0;0;False
+Lambert;2013;1;1;0;1;Human610-Quad;592628;592628;True
+Lambert;2013;19;3;16;4;Affy250K-Nsp, Affy250K-Sty, Human610-Quad, HumanHap550;1007191;83907;False
+Sherva;2013;1;1;0;1;Human610-Quad;592628;592628;True
+Cruchaga;2014;7;0;7;0;;0;0;False
+Floudas;2014;2;0;2;0;;0;0;False
+Jun;2014;1;1;0;2;Affy250K-Nsp, Affy250K-Sty;491046;491046;True
+Hirano;2015;4;4;0;1;HumanOmniExpress-12-v1-0;729854;729854;True
+Tosto;2015;3;3;0;4;AffySNP6, Human660W-Quad, HumanOmniExpress-12-v1-0, Illumina1M;1900674;358258;True
+Herold;2016;2;2;0;1;AffySNP6;906261;906261;True
+Jun;2016;7;0;7;0;;0;0;False
+Mez;2017;1;1;0;1;Illumina1M;1165470;1165470;True
+Sims;2017;4;3;1;2;HumanExome-12-v1-0, HumanExome-12-v1-1;246565;246565;False
+Gusareva;2018;1;1;0;1;Human610-Quad;592628;592628;True
+Marioni;2018;1;0;1;0;;0;0;False
+de Rojas;2019;3;0;3;0;;0;0;False
+Hao;2019;1;0;1;0;;0;0;False
+Jansen;2019;6;3;3;3;HumanOmniExpress-12-v1-0, HumanOmniExpress-24-v1-1, PsychArray;1014360;262390;False
+Kunkle BW;2019;30;25;5;11;Affy250K-Nsp, Affy250K-Sty, AffySNP6, Axiom-CEU, Human610-Quad, Human660W-Quad, HumanHap300, HumanHap550, HumanOmni1-Quad, HumanOmniExpress-12-v1-0, Illumina1M;2382789;17704;False
+Lo;2019;13;0;13;0;;0;0;False
+Moreno-Grau;2019;1;0;1;0;;0;0;False
+Nazarian;2019;4;4;0;5;Affy250K-Nsp, Affy250K-Sty, Human610-Quad, HumanOmni1-Quad, HumanOmni2.5-Quad;3150368;50977;True
+Kunkle;2021;15;15;0;9;GSA-v1, Human610-Quad, Human660W-Quad, HumanHap300, HumanOmniExpress-12-v1-0, HumanOmniExpress-24-v1-0, HumanOmniExpressExome-8-v1-2, Illumina1M, MEGA;2955974;344004;True
+Schwartzentruber;2021;31;0;31;0;;0;0;False
+Wang;2021;13;0;13;0;;0;0;False
+Wightman;2021;42;4;38;7;GSA-v1, HumanCoreExome-12-v1-0, HumanCoreExome-12-v1-1, HumanHap550, HumanOmniExpress-12-v1-0, HumanOmniExpress-24-v1-0, MEGA;2605167;249339;False
+Bellenguez;2022;9;7;2;7;Affy250K-Nsp, GSA-v1, Human610-Quad, HumanExome-12-v1-0, HumanHap300, HumanHap550, HumanOmniExpress-24-v1-1;1782081;467;False
+Shigemizu;2022;1;0;1;0;;0;0;False
