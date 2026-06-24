@@ -14,7 +14,7 @@ library(zoo)
 # 0. Ler o CSV
 # IMPORTANTE: na.strings = "" apenas, para distinguir celulas vazias (merged)
 # de celulas com "NA" textual (genuinamente desconhecidas)
-gwas <- read.csv2("metadata.csv",
+gwas <- read.csv2("metadata_gwas.csv",
                   stringsAsFactors = FALSE,
                   na.strings = "",
                   check.names = FALSE,
