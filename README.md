@@ -48,34 +48,33 @@ methodological review of Alzheimer's disease GWAS currently in preparation
 by the same team.
 
 ## Repository structure
-## Repository structure
 alzheimer-gwas-curation/
 
-├── R/                  # Standardisation and analysis pipeline (R)
+├── R/                                     # Standardisation and analysis pipeline (R)
 
-│   ├── pipeline.R                    # Master script, runs the full pipeline
+│   ├── pipeline.R                         # Master script, runs the full pipeline
 
-│   ├── funcoes_padronizacao.R        # Manifest standardisation functions
+│   ├── funcoes_padronizacao.R             # Manifest standardisation functions
 
-│   ├── preparar_gwas.R               # Cleans and structures the GWAS table
+│   ├── preparar_gwas.R                    # Cleans and structures the GWAS table
 
-│   ├── analise_gwas.R                # Union/intersection of SNPs per GWAS
+│   ├── analise_gwas.R                     # Union/intersection of SNPs per GWAS
 
-│   ├── analise_gwas_cruzamento.R     # Pairwise SNP overlap between GWAS
+│   ├── analise_gwas_cruzamento.R          # Pairwise SNP overlap between GWAS
 
-│   ├── analise_cruzamento_platf.R    # Pairwise SNP overlap between platforms
+│   ├── analise_cruzamento_platf.R         # Pairwise SNP overlap between platforms
 
-│   └── generate_supplementary_excel.R # Builds the supplementary workbook
+│   └── generate_supplementary_excel.R     # Builds the supplementary workbook
 
-├── notebooks/          # Exploratory analysis and figures (Python)
+├── notebooks/                             # Exploratory analysis and figures (Python)
 
 ├── data/
 
-│   └── raw/            # Input data (see Data section)
+│   └── raw/                               # Input data (see Data section)
 
-├── supplementary/      # Curated workbooks for consultation
+├── supplementary/                         # Curated workbooks for consultation
 
-├── figures/            # Final figures used in the report
+├── figures/                               # Final figures used in the report
 
 ├── LICENSE.txt
 
