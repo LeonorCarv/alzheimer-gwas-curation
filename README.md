@@ -8,22 +8,37 @@ overlap between studies, at the level of source cohorts and at the level of
 genetic markers (SNPs), and characterises the heterogeneity of the genotyping platforms used.
 
 ## Repository structure
+## Repository structure
 alzheimer-gwas-curation/
 
 ├── R/                  # Standardisation and analysis pipeline (R)
+
 │   ├── pipeline.R                    # Master script, runs the full pipeline
+
 │   ├── funcoes_padronizacao.R        # Manifest standardisation functions
+
 │   ├── preparar_gwas.R               # Cleans and structures the GWAS table
+
 │   ├── analise_gwas.R                # Union/intersection of SNPs per GWAS
+
 │   ├── analise_gwas_cruzamento.R     # Pairwise SNP overlap between GWAS
+
 │   ├── analise_cruzamento_platf.R    # Pairwise SNP overlap between platforms
+
 │   └── generate_supplementary_excel.R # Builds the supplementary workbook
+
 ├── notebooks/          # Exploratory analysis and figures (Python)
+
 ├── data/
+
 │   └── raw/            # Input data (see Data section)
+
 ├── supplementary/      # Curated workbooks for consultation
+
 ├── figures/            # Final figures used in the report
+
 ├── LICENSE.txt
+
 └── README.md
 
 ## Data
