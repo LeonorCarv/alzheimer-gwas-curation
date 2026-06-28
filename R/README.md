@@ -1,41 +1,41 @@
-# Scripts em R
+# R scripts
 
-Processamento das plataformas de genotipagem e análise de sobreposição de SNPs
-entre plataformas e entre GWAS. Os scripts correm em cadeia, cada um a produzir
-ficheiros que o seguinte vai ler.
+Processing of the genotyping platforms and analysis of SNP overlap between
+platforms and between GWAS. The scripts run in a chain, each producing files that
+the next one reads.
 
-## Ordem de execução
+## Execution order
 
-O `pipeline.R` corre tudo de uma vez, pela ordem certa, e é o ponto de entrada
-recomendado. Por baixo, a sequência é esta:
+`pipeline.R` runs everything at once, in the correct order, and is the
+recommended entry point. Under the hood, the sequence is:
 
-1. `funcoes_padronizacao.R` reúne as funções que normalizam os manifestos das
-   várias fontes (UCSC, Illumina, Axiom da Thermo Fisher) e os juntam num
-   ficheiro mestre único.
-2. `analise_cruzamento_platf.R` calcula a sobreposição de SNPs entre plataformas.
-3. `preparar_gwas.R` estrutura a tabela de GWAS a partir do CSV de metadados.
-4. `analise_gwas.R` calcula, para cada GWAS, os SNPs por união e por interseção
-   das plataformas usadas.
-5. `analise_gwas_cruzamento.R` constrói as matrizes de sobreposição de SNPs entre
-   GWAS, dois a dois.
-6. `generate_supplementary_excel.R` reúne tudo num único ficheiro Excel com as
-   tabelas suplementares.
+1. `funcoes_padronizacao.R` holds the functions that normalise the manifests from
+   the various sources (UCSC, Illumina, Thermo Fisher Axiom) and merge them into a
+   single master file.
+2. `analise_cruzamento_platf.R` computes the SNP overlap between platforms.
+3. `preparar_gwas.R` structures the GWAS table from the metadata CSV.
+4. `analise_gwas.R` computes, for each GWAS, the SNPs by union and by intersection
+   of the platforms used.
+5. `analise_gwas_cruzamento.R` builds the pairwise SNP overlap matrices between
+   GWAS.
+6. `generate_supplementary_excel.R` gathers everything into a single Excel file
+   with the supplementary tables.
 
-## Dados de entrada
+## Input data
 
-Os manifestos das plataformas (UCSC, Illumina, Axiom) e a tabela de metadados dos
-GWAS. Os manifestos não estão no repositório por serem ficheiros grandes e de
-fontes externas. O cabeçalho do `pipeline.R` lista quais são e onde os obter.
+The platform manifests (UCSC, Illumina, Axiom) and the GWAS metadata table. The
+manifests are not included in the repository because they are large files from
+external sources. The header of `pipeline.R` lists which ones they are and where
+to obtain them.
 
-## Como correr
+## How to run
 
-A partir da raiz do projeto, em R:
+From the project root, in R:
 
     source("R/pipeline.R")
 
-Os caminhos dos ficheiros são relativos, por isso convém correr sempre a partir
-da mesma pasta.
+The file paths are relative, so it is best to always run from the same folder.
 
-## Dependências
+## Dependencies
 
-R com os pacotes *zoo*, *DBI*, *RSQLite* e *openxlsx*.
+R with the *zoo*, *DBI*, *RSQLite* and *openxlsx* packages.
