@@ -1,4 +1,4 @@
-# Notebook
+# Notebooks
 
 Visualizations for the Alzheimer's disease GWAS curation project. The notebook
 starts from the study metadata tables and produces the figures and table used in
