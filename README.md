@@ -51,8 +51,6 @@ methodological review of Alzheimer's disease GWAS currently in preparation by th
 same team.
 
 ## Repository structure
-
-## Repository structure
 alzheimer-gwas-curation/
 
 ├── R/                                     # Standardisation and analysis pipeline (R)
@@ -70,6 +68,8 @@ alzheimer-gwas-curation/
 │   ├── analise_cruzamento_platf.R         # Pairwise SNP overlap between platforms
 
 │   ├── generate_supplementary_excel.R     # Builds the supplementary workbook
+
+│   ├── heatmap_gwas.R                      # GWAS similarity heatmaps (run separately)
 
 │   └── README.md                          # Notes on running the R pipeline
 
@@ -113,7 +113,14 @@ The required filenames are listed in the header of `R/pipeline.R`.
 The pipeline was developed in R. The following packages are required:
 
 ```r
-install.packages(c("zoo", "DBI", "RSQLite", "openxlsx"))
+install.packages(c("zoo", "DBI", "RSQLite", "openxlsx", "circlize", "RColorBrewer"))
+```
+
+`heatmap_gwas.R` also needs ComplexHeatmap, a Bioconductor package:
+
+```r
+if (!require("BiocManager")) install.packages("BiocManager")
+BiocManager::install("ComplexHeatmap")
 ```
 
 The notebook was developed in Python 3 and uses `pandas`, `numpy` and
@@ -144,11 +151,12 @@ matrices and the supplementary Excel workbook.
 
 ## Figures
 
-The `notebooks/` folder contains the Python notebook used for the exploratory
-analysis and for the figures presented in the report. Running it writes its
-output to `created_figuras/` and `created_tables/`, generated automatically. The
-final figures selected for the report are kept separately in `figures/`. See
-`notebooks/README.md` for details.
+The figures in the report come from two sources. The Python notebook in
+`notebooks/` produces the cohort, diagnostic and SNP coverage figures, writing its
+output to `created_figuras/` and `created_tables/`. `R/heatmap_gwas.R` produces
+the GWAS similarity heatmaps from the pairwise Jaccard matrices. The final figures
+selected for the report are kept separately in `figures/`. See the README in each
+folder for details.
 
 ## Author
 
