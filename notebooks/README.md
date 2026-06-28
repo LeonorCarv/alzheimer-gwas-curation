@@ -1,42 +1,41 @@
 # Notebook
 
-Visualizações do projeto de curadoria de GWAS de doença de Alzheimer. O notebook
-parte das tabelas de metadados dos estudos e gera os gráficos e a tabela usados
-na análise.
+Visualizations for the Alzheimer's disease GWAS curation project. The notebook
+starts from the study metadata tables and produces the figures and table used in
+the analysis.
 
-## Conteúdo
+## Contents
 
-- `graphs.ipynb` produz, por esta ordem, os gráficos de ligação entre bases de
-  dados e GWAS (casos e controlos), os gráficos de ligação entre métodos de
-  diagnóstico e GWAS (casos e controlos), o heatmap da sobreposição de indivíduos entre
-  estudos, a tabela de bases de dados por metodologia e o gráfico de barras
-  empilhado com a cobertura de SNPs por GWAS.
+- `graphs.ipynb` produces, in this order, the cohort-to-GWAS connection graphs
+  (cases and controls), the diagnostic-method-to-GWAS connection graphs (cases
+  and controls), the heatmap of shared individuals between studies, the table of
+  cohorts by diagnostic method, and the stacked bar chart of SNP coverage per
+  GWAS.
 
-## Dados de entrada
+## Input data
 
-O notebook lê dois ficheiros, ambos separados por ponto-e-vírgula e em
-codificação cp1252:
+The notebook reads two files from `data/raw/`, both semicolon-separated and
+cp1252-encoded:
 
-- `metadata_gwas.csv`, a tabela de metadados dos GWAS
-- `metadata_snps.csv`, a tabela de SNPs por estudo
+- `metadata_gwas.csv`, the GWAS metadata table
+- `metadata_snps.csv`, the per-study SNP table
 
-Os dois são lidos da pasta de trabalho, sem caminho indicado. Como no
-repositório estão em `data/raw/`, para correr a partir desta pasta tem de se 
-copiar para junto do notebook ou ajustar o caminho nas células de leitura.
+The paths in the reading cells are relative (`../data/raw/`), assuming the
+notebook is run from the `notebooks/` folder.
 
-## Ficheiros gerados
+## Generated files
 
-Ao correr, o notebook cria as pastas de saída automaticamente:
+When run, the notebook creates the output folders automatically:
 
-- `created_figuras/` com as figuras em PNG a 300 dpi, organizadas em subpastas
-  por tipo de gráfico (`sobrep_BD_GWAS`, `sobrep_Diag_GWAS`, `snpsVSgwas`)
-- `created_tables/` com a tabela de estudos por plataforma, em CSV e HTML
+- `created_figuras/`, the figures as 300 dpi PNGs, organised into subfolders by
+  chart type (`sobrep_BD_GWAS`, `sobrep_Diag_GWAS`, `snpsVSgwas`)
+- `created_tables/`, the table of studies by platform, as CSV and HTML
 
-## Como correr
+## How to run
 
-Abrir o notebook no Jupyter e executar as células pela ordem em que aparecem
-(menu Run, opção Run All).
+Open the notebook in Jupyter and run the cells in order (Run menu, Run All).
 
-## Dependências
+## Dependencies
 
-Python 3 com *pandas*, *NumPy* e *matplotlib*. O resto é biblioteca padrão.
+Python 3 with *pandas*, *NumPy* and *matplotlib*. Everything else is from the
+standard library.
