@@ -112,25 +112,6 @@ The notebooks were developed in Python 3 and use `pandas`, `numpy` and
 
 ## Running the pipeline
 
-The full pipeline is orchestrated by `R/pipeline.R`, which runs every stage
-in order, from standardising the platform manifests to generating the
-supplementary workbook. Note that it is computationally heavy, taking
-roughly 15 to 30 minutes, since it processes all array manifests.
-
-1. Place the downloaded manifests and the input data in the working
-   directory (the filenames expected are listed in the header of
-   `pipeline.R`).
-2. From R, with the working directory set to the project folder, run:
-
-```r
-source("R/pipeline.R")
-```
-
-The pipeline produces the standardised marker files, the pairwise overlap
-matrices and the supplementary Excel workbook.
-
-## Running the pipeline
-
 The full pipeline is orchestrated by `pipeline.R`, which runs every stage in
 order, from standardising the platform manifests to generating the supplementary
 workbook. It is computationally heavy, taking roughly 15 to 30 minutes, since it
