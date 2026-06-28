@@ -1,12 +1,13 @@
 # ============================================================================
 # pipeline.R
 #
-# Pipeline de processamento do projeto, desde a extracao das
-# plataformas ate a geracao do ficheiro Excel suplementar.
+# Pipeline completo do projeto, da extração das plataformas a partir dos
+# manifestos até à geração do ficheiro Excel suplementar. Corre as cinco fases
+# pela ordem correta, chamando os restantes scripts com source().
 #
-# Pre-requisitos (ficheiros que devem estar na pasta antes de correr):
+# Pre-requisitos (na pasta de trabalho antes de correr):
 #
-#   Manifestos UCSC (descarregados manualmente):
+#   Manifestos UCSC (.txt.gz, descarregados manualmente):
 #     - snpArrayAffy250Nsp.txt
 #     - snpArrayAffy250Sty.txt
 #     - snpArrayAffy6.txt
@@ -38,24 +39,20 @@
 #   Dados de GWAS:
 #     - metadata.csv
 #
-# Para correr no R, basta fazer:
-#   source("pipeline_completo.R")
+# Para correr: source("pipeline.R")
 # ============================================================================
 
-# Limpar sessao
 rm(list = ls())
 
 cat("\n###################################################################\n")
 cat("# PIPELINE COMPLETO - INICIO\n")
 cat("###################################################################\n\n")
-cat("ATENCAO: este pipeline e demorado (15-30 minutos).\n")
-cat("Para mudancas apenas no metadata.csv, usa pipeline.R em vez deste.\n\n")
 
 inicio_global <- Sys.time()
 
 # ----------------------------------------------------------------------------
-# FASE 1: Extracao das plataformas
-# Le manifestos e produz padrao_<plataforma>.tsv para cada array
+# FASE 1: Extração das plataformas
+# Lê manifestos e produz padrao_<plataforma>.tsv para cada array
 # ----------------------------------------------------------------------------
 
 cat("\n###################################################################\n")
@@ -127,8 +124,8 @@ cat("\nDuracao da FASE 1:",
     "minutos\n")
 
 # ----------------------------------------------------------------------------
-# FASE 2: Juncao das plataformas num ficheiro mestre
-# Combina todos os padrao_*.tsv num unico padrao_TODOS.tsv
+# FASE 2: Junção das plataformas num ficheiro mestre
+# Combinar todos os padrao_*.tsv num único padrao_TODOS.tsv
 # ----------------------------------------------------------------------------
 
 cat("\n###################################################################\n")
@@ -145,12 +142,12 @@ cat("\nDuracao da FASE 2:",
     "minutos\n")
 
 # ----------------------------------------------------------------------------
-# FASE 3: Analise de cruzamento entre plataformas
+# FASE 3: Análise de cruzamento entre plataformas
 # Matriz e distribuicao de SNPs partilhados entre plataformas
 # ----------------------------------------------------------------------------
 
 cat("\n###################################################################\n")
-cat("# FASE 3: ANALISE DE CRUZAMENTO ENTRE PLATAFORMAS\n")
+cat("# FASE 3: ANÁLISE DE CRUZAMENTO ENTRE PLATAFORMAS\n")
 cat("###################################################################\n\n")
 
 inicio_fase <- Sys.time()
@@ -168,7 +165,7 @@ cat("\nDuracao da FASE 3:",
 # ----------------------------------------------------------------------------
 
 cat("\n###################################################################\n")
-cat("# FASE 4: ANALISE POR GWAS\n")
+cat("# FASE 4: ANÁLISE POR GWAS\n")
 cat("###################################################################\n\n")
 
 inicio_fase <- Sys.time()
@@ -238,12 +235,12 @@ ficheiros_chave <- c(
   "padrao_Illumina1M.tsv",
   "padrao_MEGA.tsv",
   "padrao_PsychArray.tsv",
-  # Mestre e analise de cruzamento entre plataformas
+  # Mestre e análise de cruzamento entre plataformas
   "padrao_TODOS.tsv",
   "resumo_plataformas.tsv",
   "matriz_sobreposicao.tsv",
   "snps_por_n_plataformas.tsv",
-  # Analise por GWAS
+  # Análise por GWAS
   "gwas_limpo.tsv",
   "gwas_snps_sumario.tsv",
   "conjuntos_snps_por_gwas.rds",
@@ -264,8 +261,7 @@ for (f in ficheiros_chave) {
     cat(sprintf("  [OK]  %s\n", f))
   } else {
     n_falha <- n_falha + 1
-    cat(sprintf("  [!!]  %s (nao encontrado)\n", f))
+    cat(sprintf("  [!!]  %s (não encontrado)\n", f))
   }
 }
-cat(sprintf("\nResumo: %d ficheiros gerados, %d em falta.\n\n",
-            n_ok, n_falha))
+cat(sprintf("\nResumo: %d ficheiros gerados, %d em falta.\n\n", n_ok, n_falha))

@@ -4,52 +4,52 @@
 # Calcula a matriz de SNPs partilhados entre GWAS (pairwise comparison).
 #
 # Gera 4 matrizes:
-#   1. SNPs absolutos (uniao por GWAS)
-#   2. Indice de Jaccard (uniao por GWAS)
-#   3. SNPs absolutos (intersecao por GWAS)
-#   4. Indice de Jaccard (intersecao por GWAS)
+#   1. SNPs partilhados em valor absolutos (união por GWAS)
+#   2. Índice de Jaccard (uniao por GWAS)
+#   3. SNPs partilhados em valor absolutos (interseção por GWAS)
+#   4. Índice de Jaccard (intersecao por GWAS)
 #
-# Cada matriz e simetrica:
-#   - Diagonal: total de SNPs do proprio GWAS
-#   - Off-diagonal: SNPs partilhados ou indice de Jaccard
+# Em cada matriz a diagonal guarda o total de SNPs do proprio GWAS e as
+# restantes celulas o valor partilhado. So entram GWAS com pelo menos uma
+# subamostra valida.
 #
-# Apenas inclui GWAS com pelo menos 1 subamostra valida.
+# Lê conjuntos_snps_por_gwas.rds e gwas_snps_sumario.tsv
 # ============================================================================
 
 # ----------------------------------------------------------------------------
 # 1. Ler os conjuntos de SNPs por GWAS
 # ----------------------------------------------------------------------------
 
-cat("A ler conjuntos de SNPs por GWAS...\n")
 conjuntos <- readRDS("conjuntos_snps_por_gwas.rds")
 
-# Ler tambem o sumario por GWAS para ter autor e ano
+# Ler também o sumário por GWAS para ter autor e ano
 sumario <- read.table("gwas_snps_sumario.tsv",
                       sep = "\t", header = TRUE,
                       stringsAsFactors = FALSE,
                       na.strings = "NA",
                       quote = "", comment.char = "")
 
-# Filtrar GWAS com pelo menos 1 subamostra valida
+# Filtrar GWAS com pelo menos 1 subamostra válida
 ids_validos <- sumario$ID[sumario$n_subamostras_com_plataforma > 0]
 cat("GWAS com dados validos:", length(ids_validos), "\n")
 cat("GWAS excluidos da matriz:", nrow(sumario) - length(ids_validos), "\n\n")
 
-# Construir labels "Author Year" para os GWAS validos
+# Ordenar por ano e autor e montar os labels "Autor Ano"
 sumario_validos <- sumario[sumario$ID %in% ids_validos, ]
 sumario_validos <- sumario_validos[order(sumario_validos$ano,
                                          sumario_validos$autor), ]
 labels_gwas <- paste(sumario_validos$autor, sumario_validos$ano)
 ids_gwas_ordenados <- sumario_validos$ID
 
-# Resolver duplicados de label (caso de Lambert 2013 duas vezes)
+# Dois GWAS de Lambert 2013 partilham o mesmo label. Quando isso acontece,
+# acrescenta-se um sufixo numerico para os distinguir nas matrizes.
 if (any(duplicated(labels_gwas))) {
-  cat("AVISO: labels duplicados detectados. A acrescentar sufixo numerico.\n")
+  cat("Labels duplicados detetados. Acrescentado sufixo numérico.\n")
   labels_gwas <- make.unique(labels_gwas, sep = "_")
 }
 
 # ----------------------------------------------------------------------------
-# 2. Construir listas de SNPs (uniao e intersecao) por GWAS
+# 2. Construir listas de SNPs (uniao e intersecao) por GWAS (indexados pelo label)
 # ----------------------------------------------------------------------------
 
 snps_uniao_por_gwas      <- list()
@@ -63,7 +63,9 @@ for (idx in seq_along(ids_gwas_ordenados)) {
 }
 
 # ----------------------------------------------------------------------------
-# 3. Funcao para calcular matrizes (absoluta e Jaccard) a partir de uma lista
+# 3. Função que devolve a matriz de partilhados em valor absoluto e a matriz 
+# de Jaccard. A diagonal fica com o tamanho de cada conjunto e com Jaccard 
+# igual a 1.
 # ----------------------------------------------------------------------------
 
 calcular_matrizes <- function(lista_snps, nome_conjunto) {
@@ -120,10 +122,8 @@ matrizes_uniao      <- calcular_matrizes(snps_uniao_por_gwas, "UNIAO")
 matrizes_intersecao <- calcular_matrizes(snps_intersecao_por_gwas, "INTERSECAO")
 
 # ----------------------------------------------------------------------------
-# 5. Gravar como TSV
+# 5. Guardar como TSV, com o nome do GWAS na primeira coluna
 # ----------------------------------------------------------------------------
-
-cat("\nA gravar ficheiros TSV...\n")
 
 gravar_matriz <- function(m, nome) {
   m_df <- cbind(GWAS = rownames(m), m)
@@ -142,12 +142,12 @@ gravar_matriz(matrizes_intersecao$jaccard,
               "matriz_gwas_intersecao_jaccard.tsv")
 
 # ----------------------------------------------------------------------------
-# 6. Estatistica resumida
+# 6. Estatistica
 # ----------------------------------------------------------------------------
 
-cat("\n=== Estatistica resumida ===\n")
+cat("\n=== Estatistica ===\n")
 
-# Para a matriz Jaccard (uniao), top 10 pares mais similares
+# Para a matriz Jaccard (uniao), top 10 pares mais semelhantes
 m <- matrizes_uniao$jaccard
 diag(m) <- NA
 indices <- which(upper.tri(m), arr.ind = TRUE)
@@ -160,10 +160,10 @@ pares <- data.frame(
 )
 pares <- pares[order(-pares$Jaccard), ]
 
-cat("\nTop 10 pares de GWAS mais similares (uniao, Jaccard):\n")
+cat("\nTop 10 pares de GWAS mais semelhantes (uniao, Jaccard):\n")
 print(head(pares, 10))
 
-cat("\nTop 10 pares de GWAS menos similares (uniao, Jaccard maior que zero):\n")
+cat("\nTop 10 pares de GWAS menos semelhantes (uniao, Jaccard maior que zero):\n")
 pares_nao_zero <- pares[pares$Jaccard > 0, ]
 print(tail(pares_nao_zero, 10))
 
@@ -172,7 +172,7 @@ write.table(pares, "ranking_pares_gwas_uniao.tsv", sep = "\t",
             row.names = FALSE, quote = FALSE)
 cat("\nGuardado: ranking_pares_gwas_uniao.tsv\n")
 
-# Salvar objetos R para usar depois no Excel
+# Guardar tudo para a fase seguinte no Excel
 saveRDS(list(matrizes_uniao      = matrizes_uniao,
              matrizes_intersecao = matrizes_intersecao,
              labels_gwas         = labels_gwas,
@@ -180,5 +180,3 @@ saveRDS(list(matrizes_uniao      = matrizes_uniao,
              ranking_pares       = pares),
         "matrizes_gwas.rds")
 cat("Guardado: matrizes_gwas.rds (para uso no Excel)\n")
-
-cat("\nAnalise de cruzamento entre GWAS concluida.\n")

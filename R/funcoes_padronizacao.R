@@ -2,11 +2,12 @@
 # funcoes_padronizacao.R
 # Funcoes para padronizar manifestos e tabelas de plataformas de genotipagem
 #
-# Versao: 1.6
-# Ultima alteracao: processar_illumina adaptada para o formato real dos
-#                   manifestos Illumina: corte de [Controls], conversao
-#                   do cromossoma XY para X, e passagem da coluna SNP
-#                   (formato [A/G]) a criar_padrao para filtrar indels
+# Versao: 1.13
+# Ultima alteracao: adicionada processar_bed para ficheiros BED de UCSC/Illumina
+#                   (4 colunas: chr, start, end, name), com conversao chr<N> para
+#                   <N>, M para MT e zero-based para one-based. O BED nao traz
+#                   coluna de alelos, por isso os indels nao sao filtrados neste
+#                   caso. Usada para o Human610-Quad apos falha do FTP do manifesto.
 #
 # Historico:
 #   1.0 - Versao inicial com processar_ucsc, processar_illumina, processar_axiom
@@ -153,7 +154,6 @@ criar_padrao <- function(rs_bruto, chr_bruto, pos_bruto, build_bruto,
   return(padrao)
 }
 
-
 # ---------------------------------------------------------------------------
 # 3. FUNCAO DE GRAVACAO
 # ---------------------------------------------------------------------------
@@ -169,14 +169,12 @@ gravar_padrao <- function(padrao, plataforma) {
   cat("Gravado:", nome_ficheiro, "\n\n")
 }
 
-
 # ===========================================================================
 # 4. PROCESSAMENTO POR FONTE
 # ===========================================================================
 # Cada bloco trata uma fonte: UCSC, manifesto Illumina, anotacao Axiom SQLite.
 # A funcao criar_padrao e gravar_padrao sao sempre as mesmas. So muda a leitura.
 # ===========================================================================
-
 
 # ---------------------------------------------------------------------------
 # 4.1. ARRAYS DO UCSC (tabelas snpArray*.txt.gz)
@@ -240,7 +238,6 @@ processar_ucsc <- function(ficheiro, plataforma) {
   gravar_padrao(padrao, plataforma)
   invisible(padrao)
 }
-
 
 # ---------------------------------------------------------------------------
 # 4.2. MANIFESTOS ILLUMINA (ficheiros .csv)
@@ -834,7 +831,6 @@ processar_axiom <- function(ficheiro_db, plataforma, build = "hg19",
   gravar_padrao(padrao, plataforma)
   invisible(padrao)
 }
-
 
 # ===========================================================================
 # 5. JUNCAO FINAL DOS FICHEIROS PADRAO

@@ -8,17 +8,17 @@
 #     subamostra com plataforma conhecida. Conjunto biologicamente analisavel
 #     antes de imputacao.
 #
-# Logica:
-#   - Subamostra com plataforma NA ou nao mapeada: ignorada
-#   - Subamostra com multiplas plataformas: UNIAO dos SNPs das plataformas
-#   - GWAS com multiplas subamostras: INTERSECAO das unioes de cada subamostra
+# Regras de agregação:
+#   - Subamostra com plataforma NA ou nao mapeada:  ignorada
+#   - Subamostra com multiplas plataformas:         UNIAO dos SNPs das plataformas
+#   - GWAS com multiplas subamostras:               INTERSECAO das unioes de cada subamostra
+#
+# Lê gwas_limpo.tsv e padrao_TODOS.tsv (caminhos relativos a raiz do projeto).
 # ============================================================================
 
 # ----------------------------------------------------------------------------
 # 1. Ler dados
 # ----------------------------------------------------------------------------
-
-cat("A ler dados...\n")
 
 gwas <- read.table("gwas_limpo.tsv", sep = "\t", header = TRUE,
                    stringsAsFactors = FALSE, na.strings = "NA",
@@ -35,7 +35,8 @@ cat("GWAS distintos:", length(unique(gwas$ID)), "\n")
 cat("Subamostras no total:", nrow(gwas), "\n")
 
 # ----------------------------------------------------------------------------
-# 2. Mapeamento CSV -> ficheiro padrao
+# 2. Mapeamento do nome da plataforma no CSV para o nome do ficheiro padrao
+# Agrupado por origem do manifesto.
 # ----------------------------------------------------------------------------
 
 mapeamento <- c(
@@ -73,7 +74,7 @@ mapeamento <- c(
   "Illumina Infinium PsychArray"                        = "PsychArray"
 )
 
-# Plataformas excluidas (sem ficheiro padrao - vao ser ignoradas)
+# Plataformas excluídas (sem ficheiro padrao - as subamostras que so as usam são ignoradas)
 plataformas_excluidas <- c(
   "Agena Bioscience MassARRAY System",
   "Applied Biosystems Axiom Spain Biobank Array",
@@ -94,8 +95,8 @@ plataformas_excluidas <- c(
 )
 
 # ----------------------------------------------------------------------------
-# 3. Funcao auxiliar: dado um nome de plataforma do CSV, devolve o nome do
-#    ficheiro padrao correspondente (ou NA se for excluida ou nao mapeada)
+# 3. Funcao auxiliar: Devolve o nome do ficheiro padrao para um nome do CSV, 
+# ou NA se a plataforma for excluída ou não estiver mapeada
 # ----------------------------------------------------------------------------
 
 mapear_plataforma <- function(nome_csv) {
@@ -110,14 +111,12 @@ mapear_plataforma <- function(nome_csv) {
 # 4. Construir lista de SNPs por plataforma (chaves chr:pos)
 # ----------------------------------------------------------------------------
 
-cat("\nA construir lista de SNPs por plataforma...\n")
 snps_por_plat <- split(mestre$chave, mestre$plataforma)
 
 # ----------------------------------------------------------------------------
-# 5. Calcular conjunto de SNPs por subamostra (UNIAO das plataformas)
+# 5. Calcular conjunto de SNPs por subamostra (união das plataformas)
 # ----------------------------------------------------------------------------
 
-cat("\nA processar subamostras...\n")
 gwas$plataformas_mapeadas <- ""
 gwas$snps_uniao_subamostra <- I(vector("list", nrow(gwas)))
 gwas$n_plataformas_validas <- 0L
@@ -145,7 +144,7 @@ for (i in seq_len(nrow(gwas))) {
     next
   }
   
-  # UNIAO dos SNPs das plataformas validas desta subamostra
+  # União dos SNPs das plataformas válidas desta subamostra
   snps_lista <- snps_por_plat[plats_validas]
   snps_uniao <- unique(unlist(snps_lista))
   
@@ -153,15 +152,14 @@ for (i in seq_len(nrow(gwas))) {
   gwas$subamostra_valida[i] <- TRUE
 }
 
-cat("Subamostras com plataformas validas:", sum(gwas$subamostra_valida), "\n")
-cat("Subamostras ignoradas (NA ou excluidas):",
-    sum(!gwas$subamostra_valida), "\n")
+cat("Subamostras com plataformas válidas:", sum(gwas$subamostra_valida), "\n")
+cat("Subamostras ignoradas (NA ou excluidas):", sum(!gwas$subamostra_valida), "\n")
 
 # ----------------------------------------------------------------------------
-# 6. Calcular conjunto de SNPs por GWAS
+# Calcular conjunto de SNPs por GWAS (agregar por GWAS)
+#   - União junta todos os SNPs de qualquer subamostra válida
+#   - Interseção guarda os SNPs presentes em todas elas
 # ----------------------------------------------------------------------------
-
-cat("\nA calcular conjuntos por GWAS...\n")
 
 ids_gwas <- unique(gwas$ID)
 resultado <- data.frame(
@@ -184,13 +182,13 @@ for (id in ids_gwas) {
   n_validas <- sum(linhas_gwas$subamostra_valida)
   n_na <- n_total - n_validas
   
-  # Plataformas unicas usadas neste GWAS (validas)
+  # Plataformas únicas usadas neste GWAS (válidas)
   plats_validas_gwas <- unique(unlist(strsplit(
     linhas_gwas$plataformas_mapeadas[linhas_gwas$subamostra_valida],
     "; ")))
   plats_validas_gwas <- sort(plats_validas_gwas)
   
-  # UNIAO: todos os SNPs de qualquer subamostra valida
+  # União: todos os SNPs de qualquer subamostra válida
   if (n_validas == 0) {
     snps_uniao <- character(0)
     snps_intersecao <- character(0)
@@ -198,7 +196,7 @@ for (id in ids_gwas) {
     snps_uniao <- unique(unlist(linhas_gwas$snps_uniao_subamostra[
       linhas_gwas$subamostra_valida]))
     
-    # INTERSECAO: SNPs presentes em TODAS as subamostras validas
+    # Interseção: SNPs presentes em todas as subamostras válidas
     snps_intersecao <- Reduce(intersect,
                               linhas_gwas$snps_uniao_subamostra[
                                 linhas_gwas$subamostra_valida])
@@ -218,16 +216,15 @@ for (id in ids_gwas) {
   ))
 }
 
-# Ordenar por ID numerico
+# Ordenar por ID numérico
 resultado$ID_num <- as.integer(sub("GWAS", "", resultado$ID))
 resultado <- resultado[order(resultado$ID_num), ]
 resultado$ID_num <- NULL
 
 # ----------------------------------------------------------------------------
-# 7. Mostrar e gravar resultado
+# 7. Apresentar e gravar resultado
 # ----------------------------------------------------------------------------
 
-cat("\n=== Resultado por GWAS ===\n\n")
 print(resultado)
 
 write.table(resultado, "gwas_snps_sumario.tsv", sep = "\t",
@@ -235,14 +232,14 @@ write.table(resultado, "gwas_snps_sumario.tsv", sep = "\t",
 cat("\nGuardado: gwas_snps_sumario.tsv\n")
 
 # Estatistica final
-cat("\n=== Estatistica final ===\n")
+cat("\n=== Estatística final ===\n")
 cat("GWAS analisados:", nrow(resultado), "\n")
-cat("GWAS sem subamostras validas:",
+cat("GWAS sem subamostras válidas:",
     sum(resultado$n_subamostras_com_plataforma == 0), "\n")
-cat("GWAS com 1+ subamostras validas:",
+cat("GWAS com 1+ subamostras válidas:",
     sum(resultado$n_subamostras_com_plataforma >= 1), "\n")
 
-# Guardar tambem os conjuntos de SNPs por GWAS para usar no cruzamento
+# Guardar os conjuntos de SNPs por GWAS para a fase de cruzamento
 conjuntos_snps <- list()
 for (id in resultado$ID) {
   linhas_gwas <- gwas[gwas$ID == id & gwas$subamostra_valida, ]
