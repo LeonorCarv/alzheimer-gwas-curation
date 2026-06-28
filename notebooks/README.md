@@ -1,4 +1,4 @@
-# Notebook graphs
+# Notebook
 
 Visualizações do projeto de curadoria de GWAS de doença de Alzheimer. O notebook
 parte das tabelas de metadados dos estudos e gera os gráficos e a tabela usados
