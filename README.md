@@ -129,6 +129,29 @@ source("R/pipeline.R")
 The pipeline produces the standardised marker files, the pairwise overlap
 matrices and the supplementary Excel workbook.
 
+## Running the pipeline
+
+The full pipeline is orchestrated by `pipeline.R`, which runs every stage in
+order, from standardising the platform manifests to generating the supplementary
+workbook. It is computationally heavy, taking roughly 15 to 30 minutes, since it
+processes all array manifests.
+
+The pipeline runs from the `R/` folder. The scripts refer to one another and to
+the intermediate files by plain filename, and read `metadata_gwas.csv` from
+`data/raw/` through a relative path, so the working directory must be `R/`.
+
+1. Download the platform manifests into the `R/` folder. The expected filenames
+   are listed in the header of `pipeline.R`.
+2. From R, set the working directory to `R/` and run:
+
+```r
+source("pipeline.R")
+```
+
+The input metadata is read from `data/raw/` automatically. The output is written
+to the `R/` folder, namely the standardised marker files, the pairwise overlap
+matrices and the supplementary Excel workbook.
+
 ## Figures
 
 The `notebooks/` folder contains the Python code used for the exploratory
