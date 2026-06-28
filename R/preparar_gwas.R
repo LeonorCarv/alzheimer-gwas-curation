@@ -17,7 +17,7 @@ library(zoo)
 # das células com "NA" textual (desconhecidas)
 # ----------------------------------------------------------------------------
 
-gwas <- read.csv2("metadata.csv",
+gwas <- read.csv2("../data/raw/metadata.csv",
                   stringsAsFactors = FALSE,
                   na.strings = "",
                   check.names = FALSE,
